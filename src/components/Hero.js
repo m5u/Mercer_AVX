@@ -15,7 +15,7 @@ export default function Hero() {
               </Typography>
               <Typography className="summary">
                 AVX Limited Pension Scheme Providing Comprehensive Pension
-                Solutions for Employees, Present and Retired"
+                Solutions for Employees, Present and Retired.
               </Typography>
               {/* <Button className="btn btn-primary">Learn More</Button> */}
               <Button class="btn btn-primary learn-more">
