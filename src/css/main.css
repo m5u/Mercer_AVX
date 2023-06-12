@@ -1035,6 +1035,7 @@ input[type=number] {
   }
   .hero-left-content {
     width: 100%;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 899.98px) {
@@ -1189,7 +1190,7 @@ input[type=number] {
     font-size: 14px !important;
   }
   .hero-left-content h1 {
-    font-size: 30px !important;
+    font-size: 36px !important;
   }
   .section-accordion .heading {
     width: 100%;
@@ -1274,16 +1275,6 @@ input[type=number] {
 @media only screen and (max-width: 479.98px) {
   body {
     font-size: 14px;
-  }
-  .hero-left-content {
-    padding-bottom: 40px;
-  }
-  .hero-left-content h1 {
-    font-size: 28px !important;
-    margin: 8px 0 24px;
-  }
-  .hero-left-content .summary {
-    margin-bottom: 18px;
   }
 }
 @media (max-width: 767px) and (orientation: landscape) {
