@@ -49,7 +49,7 @@ export default function Header() {
       <AppBar className={`navbar ${sticky}`}>
         <Container className="container">
           {/* <Box sx={{ display: "flex" }}> */}
-          <a href="" className="logo">
+          <a href="/home" className="logo">
             <img src={Logo} />
           </a>
           <Menu className="responsive-menu">

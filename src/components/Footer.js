@@ -25,7 +25,7 @@ export default function Footer() {
             }}
           >
             <Box sx={{ width: { xs: "100%", md: "35%" } }}>
-              <a href="" className="logo">
+              <a href="/home" className="logo">
                 <img src={Logo} />
               </a>
               <Typography
