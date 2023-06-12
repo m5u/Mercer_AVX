@@ -329,7 +329,7 @@ input[type=number] {
 
 .hero-section {
   background: url("../images//hero-bg.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -365,8 +365,8 @@ input[type=number] {
   position: relative;
   color: #fff;
   width: 60%;
-  height: 100%;
-  padding-bottom: 80px;
+  min-height: 100vh;
+  padding: 160px 0 80px;
 }
 .hero-left-content .tag {
   font-size: 16px !important;
@@ -1070,6 +1070,16 @@ input[type=number] {
     margin-top: 48px;
     padding: 0;
   }
+  .navbar .navbar-menu .menu {
+    padding: 0 12px;
+  }
+  .hero-left-content h1 {
+    font-size: 48px !important;
+    margin: 8px 0 24px;
+  }
+  .hero-left-content .summary {
+    margin-bottom: 32px;
+  }
 }
 @media only screen and (max-width: 767.98px) {
   body {
@@ -1172,6 +1182,9 @@ input[type=number] {
     padding: 0;
     margin-top: 32px;
   }
+  .hero-left-content {
+    padding: 80px 0 40px;
+  }
   .hero-left-content .tag {
     font-size: 14px !important;
   }
@@ -1258,9 +1271,24 @@ input[type=number] {
     margin-bottom: 24px;
   }
 }
-@media (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 479.98px) {
+  body {
+    font-size: 14px;
+  }
   .hero-left-content {
     padding-bottom: 40px;
+  }
+  .hero-left-content h1 {
+    font-size: 28px !important;
+    margin: 8px 0 24px;
+  }
+  .hero-left-content .summary {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero-left-content {
+    padding: 80px 0 40px;
   }
   .hero-left-content .summary {
     margin-bottom: 24px;

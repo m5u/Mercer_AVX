@@ -375,7 +375,7 @@ $light-grey: #f2f4f8;
 }
 .hero-section {
     background: url("../images//hero-bg.jpg");
-    height: 100vh;
+    min-height: 100vh;
     // height: 768px;
     background-size: cover;
     background-position: center;
@@ -413,8 +413,8 @@ $light-grey: #f2f4f8;
         position: relative;
         color: #fff;
         width: 60%;
-        height: 100%;
-        padding-bottom: 80px;
+        min-height: 100vh;
+        padding: 160px 0 80px;
         .tag{
             font-size: 16px !important;
             font-weight: 500 !important;
@@ -1229,6 +1229,19 @@ $light-grey: #f2f4f8;
             }
         }
     }
+    .navbar .navbar-menu .menu{
+        padding: 0 12px;
+    }
+    .hero-left-content {
+ 
+       h1{
+        font-size: 48px !important;
+        margin: 8px 0 24px;
+       }
+       .summary{
+        margin-bottom: 32px;
+       }
+    }
 
 }
 @media only screen and (max-width: 767.98px) { 
@@ -1346,7 +1359,9 @@ $light-grey: #f2f4f8;
             margin-top: 32px;
         }
     }
+    
     .hero-left-content{
+        padding: 80px 0 40px;
         .tag{
             font-size: 14px !important;
         }
@@ -1446,9 +1461,29 @@ $light-grey: #f2f4f8;
     }
 }
 
-@media (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 479.98px){
+    body{
+        font-size: 14px;
+    }
     .hero-left-content {
         padding-bottom: 40px;
+        h1{
+            font-size: 28px !important;
+            margin: 8px 0 24px;
+        }
+        .summary{
+            margin-bottom: 18px;
+            //font-size: 14px;
+        }
+    }
+
+}
+@media only screen and (max-width: 320px) and (orientation: landscape){
+
+}
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero-left-content {
+        padding: 80px 0 40px;
         .summary{
             margin-bottom: 24px;
             // background: peru;
