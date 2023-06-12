@@ -41,6 +41,9 @@ export default function Header() {
       document.body.classList.remove("open-menu");
     }
   };
+  const handleCloseMenu = () => {
+    handleToggle();
+  };
   return (
     <>
       <AppBar className={`navbar ${sticky}`}>
@@ -79,6 +82,7 @@ export default function Header() {
                 activeClassName="active"
                 className="menu"
                 sx={{ my: 2, color: "white" }}
+                onClick={() => handleCloseMenu()}
               >
                 {page.label}
               </Button>
